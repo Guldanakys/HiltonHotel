@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "702764942391",
+    "firebase_url": "https://myhotel-ad61d.firebaseio.com",
+    "project_id": "myhotel-ad61d",
+    "storage_bucket": "myhotel-ad61d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702764942391:android:cb8709a74bbae793",
+        "android_client_info": {
+          "package_name": "com.example.guldana.myhotel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702764942391-n2le0mfibgt3cn07o5lbb614tmrbjlt1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEVHiyOI4zv5dZZuVB9OVV0gd4V99V7kI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
