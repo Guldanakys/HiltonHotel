@@ -20,6 +20,10 @@ class LoginActivity : AppCompatActivity() {
         btn_login.setOnClickListener(View.OnClickListener {
             view -> login()
         })
+
+        txt_registration.setOnClickListener(View.OnClickListener {
+            view -> register()
+        })
     }
 
     private fun login() {
@@ -45,5 +49,9 @@ class LoginActivity : AppCompatActivity() {
         dan@gmail.com 456good
         https://www.youtube.com/watch?v=td-6oOlRMOU&t=148s
          */
+    }
+
+    private fun register() {
+        startActivity(Intent(this, RegistrationActivity::class.java))
     }
 }

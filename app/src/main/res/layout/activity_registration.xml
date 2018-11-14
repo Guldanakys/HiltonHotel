@@ -6,79 +6,77 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorBackground"
-        tools:context=".LoginActivity">
+        tools:context=".RegistrationActivity">
 
     <TextView
-            android:id="@+id/txt_hotel"
+            android:id="@+id/txt_reg_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hilton Hotel"
-            android:fontFamily="@font/alex_brush"
-            android:textSize="60dp"
+            android:text="Registration"
+            android:textSize="30dp"
             android:textColor="@color/colorTitle"
             app:layout_constraintBottom_toTopOf="@+id/edx_email"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_chainStyle="packed"/>
+            app:layout_constraintTop_toTopOf="parent"/>
 
     <EditText
             android:id="@+id/edx_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
-            android:textSize="28dp"
+            android:textSize="24dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             app:layout_constraintBottom_toTopOf="@+id/edx_password"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             android:inputType="textEmailAddress"
-            app:layout_constraintTop_toBottomOf="@+id/txt_hotel" />
+            app:layout_constraintTop_toBottomOf="@+id/txt_reg_title" />
     <EditText
             android:id="@+id/edx_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:textSize="28dp"
+            android:textSize="24dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            app:layout_constraintBottom_toTopOf="@+id/btn_login"
+            app:layout_constraintBottom_toTopOf="@+id/edx_confirm_password"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             android:inputType="textPassword"
             app:layout_constraintTop_toBottomOf="@+id/edx_email" />
+    <EditText
+            android:id="@+id/edx_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm password"
+            android:textSize="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_register"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@+id/edx_password" />
 
 
     <Button
-            android:id="@+id/btn_login"
+            android:id="@+id/btn_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="Register"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginBottom="200dp"
             android:layout_marginRight="20dp"
             android:background="@color/colorTitle"
             android:textColor="@color/colorText"
-            app:layout_constraintBottom_toTopOf="@id/txt_registration"
+            app:layout_constraintTop_toBottomOf="@id/edx_confirm_password"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/edx_password" />
+            app:layout_constraintBottom_toBottomOf="parent" />
 
-    <TextView
-            android:id="@+id/txt_registration"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Don't have an account? Sign up!"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:textSize="20dp"
-            android:textAlignment="center"
-            app:layout_constraintTop_toBottomOf="@id/btn_login"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 </android.support.constraint.ConstraintLayout>
