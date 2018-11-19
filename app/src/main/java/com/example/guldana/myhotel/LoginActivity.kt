@@ -32,7 +32,7 @@ class LoginActivity : AppCompatActivity() {
 
         if(!email.isEmpty() && !password.isEmpty()){
             mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this, OnCompleteListener { task ->
-                if(task.isSuccessful){
+                if(task.isSuccessful) {
                     startActivity(Intent(this, MainActivity::class.java))
                     Toast.makeText(this, "Succeessfully logged in!", Toast.LENGTH_LONG).show()
                 } else {
