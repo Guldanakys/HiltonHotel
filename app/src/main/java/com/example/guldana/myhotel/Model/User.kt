@@ -1,3 +1,3 @@
-package com.example.guldana.myhotel
+package com.example.guldana.myhotel.Model
 
 class User(val id: String, val name: String)
