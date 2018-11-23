@@ -7,28 +7,32 @@ import android.support.v4.app.FragmentManager
 
 class MyPagerAdapter(fragmentManager: FragmentManager) : FragmentPagerAdapter(fragmentManager) {
 
-    override fun getItem(position: Int): Fragment {
-        return when (position) {
+    override fun getItem(position: Int): Fragment? {
+        when (position) {
             0 -> {
-                NewsFragment()
+                return NewsFragment()
             }
-            else -> {
-                RoomsFragment()
+            1 -> {
+                return RoomsFragment()
             }
+            2 -> {
+                return ProfileFragment()
+            }
+            else -> return null
         }
     }
 
     override fun getCount(): Int {
-        return 2
+        return 3
     }
 
-    override fun getPageTitle(position: Int): CharSequence {
-        return when (position) {
-            0 -> "News"
-            else -> {
-                return "Rooms"
-            }
+    override fun getPageTitle(position: Int): CharSequence? {
+        when (position) {
+            0 -> return "News"
+            1 -> return "Rooms"
+            2 -> return "Profile"
         }
+        return null
     }
 
 }

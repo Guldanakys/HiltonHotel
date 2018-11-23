@@ -42,13 +42,6 @@ class LoginActivity : AppCompatActivity() {
         } else {
             Toast.makeText(this, "Please fill up the credentials!", Toast.LENGTH_LONG).show()
         }
-
-
-        /*
-        indi@mail.ru 123hello
-        dan@gmail.com 456good
-        https://www.youtube.com/watch?v=td-6oOlRMOU&t=148s
-         */
     }
 
     private fun register() {
