@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="Toolbar">
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/alex_brush</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">?attr/actionBarSize</item>
         <item name="android:background">?attr/colorPrimary</item>

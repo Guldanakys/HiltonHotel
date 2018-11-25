@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
             mAuth.signOut()
             startActivity(Intent(this, LoginActivity::class.java))
             Toast.makeText(this, "Logged out!", Toast.LENGTH_LONG).show()
+            finish()
         }
         return super.onOptionsItemSelected(item)
     }

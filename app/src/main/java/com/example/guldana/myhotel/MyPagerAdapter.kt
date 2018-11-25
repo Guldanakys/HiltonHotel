@@ -16,6 +16,9 @@ class MyPagerAdapter(fragmentManager: FragmentManager) : FragmentPagerAdapter(fr
                 return RoomsFragment()
             }
             2 -> {
+                return BookingsFragment()
+            }
+            3 -> {
                 return ProfileFragment()
             }
             else -> return null
@@ -23,14 +26,15 @@ class MyPagerAdapter(fragmentManager: FragmentManager) : FragmentPagerAdapter(fr
     }
 
     override fun getCount(): Int {
-        return 3
+        return 4
     }
 
     override fun getPageTitle(position: Int): CharSequence? {
         when (position) {
             0 -> return "News"
             1 -> return "Rooms"
-            2 -> return "Profile"
+            2 -> return "Bookings"
+            3 -> return "Profile"
         }
         return null
     }

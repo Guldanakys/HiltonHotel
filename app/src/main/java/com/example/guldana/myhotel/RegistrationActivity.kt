@@ -46,6 +46,7 @@ class RegistrationActivity : AppCompatActivity() {
                         mDatabase.child(current_uid).setValue(user)
                         startActivity(Intent(this, MainActivity::class.java))
                         Toast.makeText(this, "Succeessfully signed in!", Toast.LENGTH_LONG).show()
+                        finish()
                     } else {
                         Toast.makeText(this, "Error!", Toast.LENGTH_LONG).show()
                     }
