@@ -51,6 +51,7 @@ class BookingsFragment : Fragment() {
             }
 
             override fun onDataChange(p0: DataSnapshot) {
+                bookingsList.clear()
                 if(p0.exists()){
                     for(b in p0.children){
                         val booking = b.getValue(Booking::class.java)
@@ -66,10 +67,10 @@ class BookingsFragment : Fragment() {
             }
         })
 
-
         view.flt_btn_add.setOnClickListener {
             val intent = Intent(activity, AddBookingActivity::class.java)
             startActivityForResult(intent, ADD_TASK_REQUEST)
+            bookingsList.clear()
         }
 
         return view
